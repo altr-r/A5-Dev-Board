@@ -1,5 +1,5 @@
 const back = document.getElementById("back");
 
 back.addEventListener("click", () => {
-  window.location.href = "/A5-Dev-Board/";
+  window.location.href = window.location.origin + "/index.html";
 });
