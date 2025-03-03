@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Browse Pets</title>
+    <title>DevBoard</title>
     <!--Daisy Ui and TailwindCSS-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -29,25 +29,49 @@
         theme: {
           extend: {
             colors: {
-              main: "#FFFFFF",
+              uibg: "#FFFFFF",
+              mainbg: "#F4F7FF",
               cardbg: "#F4F7FF",
               acent: "#3752FD",
               maintext: "#00303C",
               subtext: "#000000",
             },
             fontFamily: {
-              poppins: "poppins",
+              poppins: ["Poppins"],
             },
           },
         },
       };
     </script>
   </head>
-  <body>
-    <header>
-      <nav></nav>
-    </header>
-    <main></main>
-    <footer></footer>
+  <body class="bg-mainbg font-poppins">
+    <div class="container mx-auto">
+      <!--Nav Bar-->
+      <section class="py-6">
+        <nav class="navbar flex justify-between bg-uibg rounded-2xl px-6 py-4">
+          <!--Left Side-->
+          <div class="flex gap-2">
+            <img src="assets/logo.png" alt="" />
+            <p class="text-2xl pt-2">
+              Dev<span class="text-2xl pt-2 font-bold">Board</span>
+            </p>
+          </div>
+          <!--Right Side-->
+          <div class="flex gap-8">
+            <div class="btn bg-mainbg rounded-full">
+              <img src="assets/checkbox.png" alt="" />
+              <p class="text-2xl">23</p>
+            </div>
+            <div>
+              <button id="themePicker" class="bg-mainbg btn btn-circle p-2">
+                <img src="assets/theme-btn.png" alt="" />
+                <input type="color" id="colorPicker" class="hidden" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>
+    <script src="scripts/theme.js"></script>
   </body>
 </html>
