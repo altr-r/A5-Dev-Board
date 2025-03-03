@@ -60,7 +60,7 @@
           <div class="flex gap-8">
             <div class="btn bg-mainbg rounded-full">
               <img src="assets/checkbox.png" alt="" />
-              <p class="text-2xl">23</p>
+              <p id="completed" class="text-2xl">23</p>
             </div>
             <div>
               <button id="themePicker" class="bg-mainbg btn btn-circle p-2">
@@ -86,7 +86,7 @@
               </button>
               <div>
                 <p class="font-sm text-sm text-[#00303C]">Task Assigned</p>
-                <p class="font-bold text-2xl">06</p>
+                <p id="assigned" class="font-bold text-2xl">06</p>
               </div>
             </div>
             <!--Discover Part-->
@@ -110,8 +110,8 @@
                 <img src="./assets/calender.png" alt="" />
               </div>
               <div class="">
-                <p class="font-sm text-lg">Wed ,</p>
-                <p class="font-bold text-2xl">Jul 25 2025</p>
+                <p id="day" class="font-sm text-lg">Wed ,</p>
+                <p id="date" class="font-bold text-2xl">Jul 25 2025</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@
                   <p class="font-bold text-lg">21 March 2025</p>
                 </div>
                 <button
-                  class="btn bg-acent py-3 px-5 text-uibg font-medium btn-complete"
+                  class="btn bg-acent py-3 px-5 text-uibg font-medium complete"
                 >
                   Completed
                 </button>
@@ -174,7 +174,7 @@
                   <p class="font-bold text-lg">21 March 2025</p>
                 </div>
                 <button
-                  class="btn bg-acent py-3 px-5 text-uibg font-medium btn-complete"
+                  class="btn bg-acent py-3 px-5 text-uibg font-medium complete"
                 >
                   Completed
                 </button>
@@ -205,7 +205,7 @@
                   <p class="font-bold text-lg">21 March 2025</p>
                 </div>
                 <button
-                  class="btn bg-acent py-3 px-5 text-uibg font-medium btn-complete"
+                  class="btn bg-acent py-3 px-5 text-uibg font-medium complete"
                 >
                   Completed
                 </button>
@@ -236,7 +236,7 @@
                   <p class="font-bold text-lg">21 March 2025</p>
                 </div>
                 <button
-                  class="btn bg-acent py-3 px-5 text-uibg font-medium btn-complete"
+                  class="btn bg-acent py-3 px-5 text-uibg font-medium complete"
                 >
                   Completed
                 </button>
@@ -267,7 +267,7 @@
                   <p class="font-bold text-lg">21 March 2025</p>
                 </div>
                 <button
-                  class="btn bg-acent py-3 px-5 text-uibg font-medium btn-complete"
+                  class="btn bg-acent py-3 px-5 text-uibg font-medium complete"
                 >
                   Completed
                 </button>
@@ -298,7 +298,7 @@
                   <p class="font-bold text-lg">21 March 2024</p>
                 </div>
                 <button
-                  class="btn bg-acent py-3 px-5 text-uibg font-medium btn-complete"
+                  class="btn bg-acent py-3 px-5 text-uibg font-medium complete"
                 >
                   Completed
                 </button>
@@ -313,12 +313,16 @@
             <p class="font-medium text-xl">Activity Log</p>
           </div>
           <div class="flex justify-center my-3">
-            <button class="btn bg-acent text-sm font-light text-white">
-              Check History
+            <button
+              id="clearHistory"
+              class="btn bg-acent text-sm font-light text-white"
+            >
+              Clear History
             </button>
           </div>
           <hr class="border-t-2 border-dashed mb-3" />
           <div
+            id="history"
             class="bg-mainbg hidden text-center mx-3 rounded-lg p-3 font-semibold"
           ></div>
         </div>
@@ -326,5 +330,6 @@
     </div>
     <script src="scripts/theme.js"></script>
     <script src="scripts/discover.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
